@@ -1,0 +1,37 @@
+baseURL = "/"
+languageCode = "en"
+
+title = "ROSA WS"
+theme = "antora-default-ui-hugo-theme"
+
+copyright = "Acme Corp. All rights reserved."
+paginate = 3
+
+[params]
+  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  keywords = ["foo", "bar"]
+  editThisPage = "https://github.com/basil/antora-default-ui-hugo-theme/edit/master/exampleSite/content/"
+  since = 2020
+
+[markup]
+  [markup.asciidocext]
+    [markup.asciidocext.attributes]
+      "icons" = "font"
+      "source-highlighter" = "highlightjs"
+  [markup.highlight]
+    # Disable Goldmark Chroma syntax highlighter
+    codeFences = false
+
+[security]
+enableInlineShortcodes = false
+
+[security.exec]
+allow = ["^dart-sass-embedded$", "^go$", "^npx$", "^postcss$", "^asciidoctor$"]
+osEnv = ["(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM|RUBYLIB)$"]
+
+[security.funcs]
+getenv = ["^HUGO_"]
+
+[security.http]
+methods = ["(?i)GET|POST"]
+urls = [".*"]
