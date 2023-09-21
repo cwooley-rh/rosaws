@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = https://github.com/cwooley-rh/rosaws
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	pushurl = https://github.com/cwooley-rh/rosaws.git
