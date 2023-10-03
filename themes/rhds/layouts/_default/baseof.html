@@ -4,14 +4,14 @@
   {{ partial "head.html" . }}
 </head>
 <body>
-  {{ partial "rhds/header.html" . }}
-  {{ partial "rhds/nav.html" .}}
+  {{ partial "header.html" . }}
+  {{ partial "nav.html" .}}
   {{ block "hero" . }}{{ end }}
   <main>
     {{ block "main" . }}{{ end }}
   </main>
   {{ partial "collaborate.html" . }}
-  {{ partial "rhds/footer.html" .}}
+  {{ partial "footer.html" .}}
   {{ partial "eddl/page-load-completed.html" . }}
 </body>
 </html>
